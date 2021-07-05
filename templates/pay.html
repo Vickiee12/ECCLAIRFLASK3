@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopit | single</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+<div class="jumbotron">
+    <h1 class="display-5">ShopIt Market</h1>
+    <p class="lead"> Best shopping experince</p>
+    <hr class="my-2">
+    <p>Join an online communnity where selling and buying is our priority</p>
+</div>
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h4>{{furniture[1]}}</h4>
+            <p>{{furniture[2]}}</p>
+            <h4>{{furniture[4]}}</h4>
+            <p class="text-muted"> Category:{{furniture[3]}}</p>
+
+            <form action="/mpesa" method="post">
+                <input type="number" name="qty" placeholder="Quantity"><br>
+                <input type="text" name="Phone" placeholder="Phone number"><br>
+                <br>
+                <input type="submit" value="Pay now"  class="btn btn-warning">
+
+            </form>
+            <br>
+            <a href="/" class="btn btn-warning">Continue shopping</a>
+        </div>
+        <div class="col-md-6">
+            <img src="{{furniture[5]}}" alt="" class="img-fluid" width="80%">
+            <br>
+            <h4>Added on: {{furniture[6]}}</h4>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
